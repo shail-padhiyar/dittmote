@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Dittmøte</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme Fonts -->
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- select2 css links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+
+
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Css -->
+
+
+</head>
+
+<body class="add-event-body">
+    <main>
+        <!--===== Navigation =====-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top dittmote-navigation shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/Logo.svg" class="img-fluid" alt="Dittmøte Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#responsive-navigation" aria-controls="responsive-navigation" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="responsive-navigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="d-flex align-items-center nav-link dropdown-toggle justify-content-center" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="user-image me-2">
+                                    <img src="assets/images/user.png" alt="user">
+                                </div>
+                                Org. User
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="profile.html">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                <li><a class="dropdown-item" href="manage-event.html">Manage Events</a></li>
+                                <li><a class="dropdown-item" href="#">Support Tickets</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!--===== Navigation =====-->
+
+
+        <!--===== Event Step Wizard Section =====-->
+        <div class="events-step-wizard-section section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title dark">
+                            <h2 class="text-center mb-5">Add Event</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard mb-sm-5">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Step 1">
+                            <a class="nav-link active rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                                href="#step1" id="step1-tab" data-bs-toggle="tab" role="tab" aria-controls="step1"
+                                aria-selected="true">
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Step 2">
+                            <a class="nav-link rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                                href="#step2" id="step2-tab" data-bs-toggle="tab" role="tab" aria-controls="step2"
+                                aria-selected="false" title="Step 2">
+                                <span>2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Step 3">
+                            <a class="nav-link rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                                href="#step3" id="step3-tab" data-bs-toggle="tab" role="tab" aria-controls="step3"
+                                aria-selected="false" title="Step 3">
+                                <span>3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item flex-fill" role="presentation" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Step 4">
+                            <a class="nav-link rounded-circle mx-auto d-flex align-items-center justify-content-center"
+                                href="#step4" id="step4-tab" data-bs-toggle="tab" role="tab" aria-controls="step4"
+                                aria-selected="false" title="Step 4">
+                                <span>4</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content py-5" id="myTabContent">
+                        <div class="tab-pane fade show active" role="tabpanel" id="step1" aria-labelledby="step1-tab">
+
+                            <div class="add-event-form p-4">
+                                <form class="mb-0">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-4">
+                                                <label for="event-name" class="form-label">Event Name</label>
+                                                <input type="text" class="form-control" id="event-name"
+                                                    aria-describedby="Event Name" placeholder="Event Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-4">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    aria-describedby="email" placeholder="Email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-4 multiple-select-2-arrow">
+                                                <label for="event-type" class="form-label">Select Event(s)</label>
+                                                <select class="form-select select-2 mb-3" id="event-type"
+                                                    data-placeholder="Select Event(s)" multiple>
+                                                    <option>Event 1</option>
+                                                    <option>Event 2</option>
+                                                    <option>Event 3</option>
+                                                    <option>Event 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-4 multiple-select-2-arrow">
+                                                <label for="event-speaker" class="form-label">Select Speaker(s)</label>
+                                                <select class="form-select mb-3" id="event-speaker"
+                                                    data-placeholder="Select Speaker(s)" multiple>
+                                                    <option>Speaker 1</option>
+                                                    <option>Speaker 2</option>
+                                                    <option>Speaker 3</option>
+                                                    <option>Speaker 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="mb-4 date-field">
+                                                <div class="date-img">
+                                                    <img src="assets/images/date.svg" alt="date">
+                                                </div>
+                                                <label for="start-date" class="form-label">Start Date</label>
+                                                <input type="datetime-local" class="form-control" id="start-date"
+                                                    aria-describedby="start-date" placeholder="Start Date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="mb-4 date-field">
+                                                <div class="date-img">
+                                                    <img src="assets/images/date.svg" alt="date">
+                                                </div>
+                                                <label for="end-date" class="form-label">End Date</label>
+                                                <input type="datetime-local" class="form-control" id="end-date"
+                                                    aria-describedby="end-date" placeholder="End Date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 d-flex align-items-end">
+                                            <div class="mb-4 w-100">
+                                                <div class="form-check children-meeting-checkbox">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="is-children-meeting">
+                                                    <label class="form-check-label" for="is-children-meeting">
+                                                        Is Children Meeting?
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 d-flex align-items-end">
+                                            <div class="mb-4 w-100">
+                                                <div class="form-check children-meeting-checkbox">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="is-sponsored">
+                                                    <label class="form-check-label" for="is-sponsored">
+                                                        Is Sponsored?
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="col-md-6">
+                                            <div class="mb-4 d-flex status-switch align-items-center p-2">
+                                                <label class="form-check-label me-3" for="status-switch">Status</label>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="status-switch">
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+
+                                    </div>
+                                    <!-- <div class="text-end">
+                                        <button type="button" name="" id="" class="btn btn-lg btn-primary">Submit</button>
+                                    </div> -->
+                                </form>
+
+                                <div class="d-flex justify-content-end">
+                                    <a class="btn btn-primary next" id="step1-next">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" id="step2" aria-labelledby="step2-tab">
+
+                            <div class="add-event-form p-4">
+                                <form class="mb-0">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-4 d-flex flex-column">
+                                                <label for="event-size" class="form-label">Select Event Size</label>
+                                                <select class="form-select select-2 mb-3" id="event-size"
+                                                    data-placeholder="Select Church">
+                                                    <option>01 to 50</option>
+                                                    <option>51 to 150</option>
+                                                    <option>151 to 300</option>
+                                                    <option>300+</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12 p-3">
+                                            <label class="form-label">Tickets Details</label>
+                                            <div class="row p-2 align-items-center">
+                                                <div class="col-md-3">
+                                                    <div class="mb-4 d-flex flex-column">
+                                                        <label for="ticket-for-children" class="form-label">Ticket Type</label>
+                                                        <select class="form-select select-2 mb-3" id="ticket-for-children"
+                                                            data-placeholder="Ticket Type">
+                                                            <option>Children</option>
+                                                            <option>Adult Male</option>
+                                                            <option>Adult Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-4">
+                                                        <label for="ticket-amount" class="form-label">Ticket Amount</label>
+                                                        <input type="text" class="form-control" id="ticket-amount"
+                                                            aria-describedby="Ticket Amount" placeholder="Ticket Amount">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-4">
+                                                        <label for="ticket-number" class="form-label">Ticket Number</label>
+                                                        <input type="text" class="form-control" id="ticket-number"
+                                                            aria-describedby="Ticket Number" placeholder="Ticket Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <a href="#" class="btn btn-outline-icon primary mt-sm-2 mt-3 answer-btn ">
+                                                        <i class="fa fa-plus icon" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="col-md-12">
+                                            <div class="mb-4">
+                                                <label for="description" class="form-label">Description</label>
+                                                <div id="description"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn btn-outline-secondary previous" id="step2-prev">Previous</a>
+                                    <a class="btn btn-primary next" id="step2-next">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" id="step3" aria-labelledby="step3-tab">
+
+                            <div class="add-event-form p-4">
+                                <form class="mb-0">
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                            <div class="mb-4">
+                                                <label for="cancellation-policy" class="form-label">Cancellation
+                                                    Policy <small>(Optional)</small></label>
+                                                <div id="cancellation-policy"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-4">
+                                                <label for="inclusion" class="form-label">Inclusion <small>(Optional)</small></label>
+                                                <div id="inclusion"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <div class="mb-4">
+                                                <label for="banner-image-input" class="form-label">Banner Image</label>
+                                                <label class="uploaded-picture banner" for="banner-image-input" tabIndex="0">
+                                                    <span class="banner-image"></span>
+                                                </label>
+
+                                                <input type="file" name="banner-image-input" class="upload-image-input" id="banner-image-input">
+                                                
+                                                <div class="pre-defined-images mt-2 d-flex justify-content-evenly">
+                                                    <img src="assets/images/slide-1.png" alt="pre defined images for select" class="img-fluid" id="pre-banner-img">
+                                                    <img src="assets/images/event-2-square.jpg" alt="pre defined images for select" class="img-fluid">
+                                                    <img src="assets/images/slide-1.png" alt="pre defined images for select" class="img-fluid">
+                                                    <img src="assets/images/slide-2.png" alt="pre defined images for select" class="img-fluid">
+                                                    <img src="assets/images/slide-1.png" alt="pre defined images for select" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="mb-4">
+                                                <label for="event-image" class="form-label">Event Image</label>
+                                                <label class="uploaded-picture event" for="event-image-input" tabIndex="0">
+                                                    <span class="event-image"></span>
+                                                </label>
+
+                                                <input type="file" name="event-image-input" class="upload-image-input" id="event-image-input">
+                                                
+                                                <div class="pre-defined-images event mt-2 d-flex justify-content-evenly">
+                                                    <img src="assets/images/event-pre-def-1.jpg" alt="pre defined images for select" class="img-fluid" id="pre-event-img">
+                                                    <img src="assets/images/event-pre-def-2.jpg" alt="pre defined images for select" class="img-fluid">
+                                                    <img src="assets/images/event-pre-def-3.jpg" alt="pre defined images for select" class="img-fluid">
+                                                    <img src="assets/images/event-pre-def-4.jpg" alt="pre defined images for select" class="img-fluid">
+                                                    <img src="assets/images/event-pre-def-1.jpg" alt="pre defined images for select" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn btn-outline-secondary previous" id="step3-prev">Previous</a>
+                                    <a class="btn btn-primary next" id="step3-next">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" id="step4" aria-labelledby="step4-tab">
+
+                            <div class="add-event-form p-4">
+                                <form class="mb-0">
+                                    <div class="row">
+                                        <div class="col-md-12 p-3">
+                                            <label for="faq-form" class="form-label">FAQ’s</label>
+                                            <div class="faq-form p-4">
+                                                <div class="col-md-12">
+                                                    <div class="mb-4">
+                                                        <label for="question" class="form-label">Question</label>
+                                                        <input type="text" class="form-control" id="question"
+                                                            aria-describedby="question" placeholder="Question">
+                                                    </div>
+                                                </div>
+            
+                                                <div class="col-md-12">
+                                                    <div class="mb-4">
+                                                        <div class="w-100">
+                                                            <label for="answer" class="form-label">Answer</label>
+                                                        </div>
+                                                        <div class="d-flex flex-sm-row flex-column align-items-sm-end align-items-start">
+                                                            <textarea class="p-2 w-100 me-3 border-radius-sm" name="answer" id="answer" rows="3"
+                                                                placeholder="Answer"></textarea>
+                                                            <a href="#" class="btn btn-outline-icon primary d-flex mt-sm-0 mt-3 answer-btn ">
+                                                                <i class="fa fa-plus icon" aria-hidden="true"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+            
+                                                <div class="col-md-12">
+                                                    <div class="mb-4">
+                                                        <label for="question" class="form-label">Question</label>
+                                                        <input type="text" class="form-control" id="question"
+                                                            aria-describedby="question" placeholder="Question">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mb-4">
+                                                        <div class="w-100">
+                                                            <label for="answer" class="form-label">Answer</label>
+                                                        </div>
+                                                        <div class="d-flex flex-sm-row flex-column align-items-sm-end align-items-start">
+                                                            <textarea class="p-2 w-100 me-3 border-radius-sm" name="answer" id="answer" rows="3"
+                                                                placeholder="Answer"></textarea>
+                                                            <a href="#" class="btn btn-outline-icon danger d-flex mt-sm-0 mt-3 answer-btn">
+                                                                <i class="fa fa-trash icon" aria-hidden="true"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn btn-outline-secondary previous" id="step4-prev">Previous</a>
+                                    <a href="manage-event.html" class="btn btn-primary next" id="step4-next">Submit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== Event Step Wizard Section =====-->
+
+
+
+    </main>
+    <!--===== Footer Section =====-->
+    <footer class="container-fluid bg-black py-5 about-section">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/Logo-light.svg" class="img-fluid" alt="Dittmøte Logo">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-sm-end mt-sm-0 mt-3">
+                        <li class="ms-sm-4">
+                            <a href="#">
+                                <span class="icon-facebook footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-instagram footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-twitter footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-youtube footer-social-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row links-contact d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="about-us.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="privacy-policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-and-condition.html">Terms and conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0 text-lg-end">
+                    <h5>
+                        Stay up to date with
+                        <span class="text-blue">Ditt</span>møte
+                    </h5>
+
+                    <div class="contact-container">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            <span class="icon-arrow-right footer-social-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white text-start small h-100 d-flex align-items-center">&copy; 2023 Dittmøte.
+                        All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="dropdown d-flex align-items-center justify-content-end">
+                        <button class="btn dropdown-toggle language text-white small" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/uk.svg" class="me-1" alt="language"> English
+                        </button>
+                        <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/uk.svg"
+                                        alt="united kingdom flag" class="me-1"> English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/norway.svg" alt="norway flag"
+                                        class="me-1"> Norwegian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--===== Footer Section =====-->
+
+
+    <!-- Scripts -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+
+    <!-- this script is for create ck editors textarea field -->
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#cancellation-policy'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#inclusion'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+    <!-- this script is for create ck editors textarea field -->
+
+    <script>
+        function relocate_login() {
+            location.href = "login.html";
+        }
+
+        $(".favourite-event").click(function () {
+            $(".icon-heart-fill").toggleClass("d-none");
+            $(".icon-heart-blank").toggleClass("d-none");
+        });
+    </script>
+
+
+    <!-- banner image preview script -->
+    <script>
+        const banner_image_input = document.querySelector("#banner-image-input");
+        const banner_image = document.querySelector(".banner-image");
+        const banner_image_text = "Choose an image";
+        banner_image.innerHTML = banner_image_text;
+
+        banner_image_input.addEventListener("change", function (e) {
+            const inputTarget = e.target;
+            const file = inputTarget.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.addEventListener("load", function (e) {
+                    const readerTarget = e.target;
+
+                    const img = document.createElement("img");
+                    img.src = readerTarget.result;
+                    img.classList.add("upload-img");
+
+                    banner_image.innerHTML = "";
+                    banner_image.appendChild(img);
+                });
+                
+
+                reader.readAsDataURL(file);
+            } else {
+                banner_image.innerHTML = banner_image_text;
+            }
+        });
+
+        $("#pre-banner-img").click(function(){
+            banner_image.innerHTML = ""
+            var img = $('<img src="" class="img-fluid">');
+            img.attr('src', 'assets/images/slide-1.png');
+            img.appendTo('.banner-image');
+       });
+    </script>
+    <!-- banner image preview script -->
+
+    <!-- event image preview script -->
+    <script>
+        const inputFile = document.querySelector("#event-image-input");
+        const pictureImage = document.querySelector(".event-image");
+        const pictureImageTxt = "Choose an image";
+        pictureImage.innerHTML = pictureImageTxt;
+
+        inputFile.addEventListener("change", function (e) {
+            const inputTarget = e.target;
+            const file = inputTarget.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.addEventListener("load", function (e) {
+                    const readerTarget = e.target;
+
+                    const img = document.createElement("img");
+                    img.src = readerTarget.result;
+                    img.classList.add("upload-img");
+
+                    pictureImage.innerHTML = "";
+                    pictureImage.appendChild(img);
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                pictureImage.innerHTML = pictureImageTxt;
+            }
+        });
+
+        $("#pre-event-img").click(function(){
+            pictureImage.innerHTML = ""
+            var img = $('<img src="" class="img-fluid">');
+            img.attr('src', 'assets/images/event-pre-def-1.jpg');
+            img.appendTo('.event-image');
+       });
+    </script>
+    <!--event image preview script -->
+
+
+    <!-- tabing wizard script -->
+    <script>
+        $(document).ready(function () {
+            //Enable Tooltips
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            //Advance Tabs
+            $(".next").click(function () {
+                const nextTabLinkEl = $(".nav-tabs .active")
+                    .closest("li")
+                    .next("li")
+                    .find("a")[0];
+                const nextTab = new bootstrap.Tab(nextTabLinkEl);
+                nextTab.show();
+            });
+
+            $(".previous").click(function () {
+                const prevTabLinkEl = $(".nav-tabs .active")
+                    .closest("li")
+                    .prev("li")
+                    .find("a")[0];
+                const prevTab = new bootstrap.Tab(prevTabLinkEl);
+                prevTab.show();
+            });
+        });
+
+        // on next and prev button click add and remove done class
+        $("#step1-next").click(function(){
+            $("#step1-tab").addClass("step-done")
+        });
+        
+        $("#step2-prev").click(function(){
+            $("#step1-tab").removeClass("step-done")
+        });
+        
+        $("#step2-next").click(function(){
+            $("#step2-tab").addClass("step-done")
+        });
+        
+        $("#step3-prev").click(function(){
+            $("#step2-tab").removeClass("step-done")
+        });
+        
+        $("#step3-next").click(function(){
+            $("#step3-tab").addClass("step-done")
+        });
+        
+        $("#step4-prev").click(function(){
+            $("#step3-tab").removeClass("step-done")
+        });
+
+
+        $("#step1-tab").click(function(){
+            $("#step1-tab, #step2-tab, #step3-tab, #step4-tab").removeClass("step-done");
+        });
+        $("#step2-tab").click(function(){
+            $("#step1-tab").addClass("step-done");
+            $("#step2-tab, #step3-tab, #step4-tab").removeClass("step-done");
+        });
+        $("#step3-tab").click(function(){
+            $("#step1-tab, #step2-tab").addClass("step-done");
+            $("#step3-tab, #step4-tab").removeClass("step-done");
+        });
+        $("#step4-tab").click(function(){
+            $("#step1-tab, #step2-tab, #step3-tab").addClass("step-done");
+        });
+
+
+
+    </script>
+    <!-- tabing wizard script -->
+
+
+    <!-- select2 initialization script -->
+    <script>
+        $('.form-select').select2({
+            minimumResultsForSearch: -1
+        });
+        $('#event-size').select2({
+            minimumResultsForSearch: -1
+        });
+        $('#event-size').select2().on('select2:opening', function(e) {
+            $(this).data('select2').$dropdown.find(':input.select2-search__field').attr('placeholder', 'Or Enter Custom Size')
+        })
+        $("#event-size").select2({
+            tags: true
+        });
+    </script>
+    <!--select2 initialization script -->
+</body>
+
+</html>

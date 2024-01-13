@@ -1,0 +1,833 @@
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Dittmøte</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme Fonts -->
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+</head>
+
+<body class="event-detail-body">
+    <main>
+        <!--===== Navigation =====-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top dittmote-navigation shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/Logo.svg" class="img-fluid" alt="Dittmøte Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#responsive-navigation" aria-controls="responsive-navigation" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="responsive-navigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary ms-lg-4" onclick="relocate_login()">
+                        Login
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+        <!--===== Navigation =====-->
+
+        <!--===== Home Section =====-->
+
+        <div class="container-fluid px-0">
+            <div class="hero-banner event-detail">
+                <img src="assets/images/event-detail-hero.png" alt="event detail hero image" class="img-fluid w-100">
+                <div class="hero-img-content">
+                    <div class="container">
+                        <h2>Maiores alias conseua</h2>
+                        <h2>tur aut nerferen dis eveniet</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="event-details">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 mb-3 mb-md-0 d-flex align-items-center">
+                        <span class="icon-calendar event-detail-icon me-2"></span>
+                        <div>
+                            <h6 class="card-subtitle">Date</h6>
+                            <p class="mb-0">24 October, 2023</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3 mb-md-0 d-flex align-items-center">
+                        <span class="icon-speaker event-detail-icon me-2"></span>
+                        <div>
+                            <h6 class="card-subtitle">Speaker</h6>
+                            <p class="mb-0">Jonathan Andrew</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3 mb-sm-0 d-flex align-items-center">
+                        <span class="icon-map event-detail-icon me-2"></span>
+                        <div>
+                            <h6 class="card-subtitle">Location</h6>
+                            <p class="mb-0 max-detail-2-line">Prism club, Midtown Prism club, Midtown Prism club, Midtown Prism club, Midtown </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 d-flex align-items-center">
+                        <span class="icon-ticket event-detail-icon me-2"></span>
+                        <div>
+                            <h6 class="card-subtitle">Ticket</h6>
+                            <p class="mb-0">Starting from $49</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--===== Home Section =====-->
+
+
+        <!--===== Event Details Section =====-->
+        <div class="container-fluid section event-detail-section mt-5 mt-md-0">
+            <div class="container-md">
+                <div class="section-title mt-5 mb-4 dark">
+                    <h2 class="text-lg-start">Event Details</h2>
+                </div>
+                <div class="row mt-md-5">
+                    <div class="col-lg-6">
+                        <div class="left-section">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="mt-4">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque
+                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                explicabo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right-section mx-auto">
+                            <img class="img-fluid" src="assets/images/event-detail-speaker.png" alt="event detail speaker">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== Event Details Section =====-->
+
+        <!--===== Speakers Section =====-->
+        <div class="container-fluid section speakers-section bg-light-blue">
+            <div class="container-md">
+                <div class="section-title dark">
+                    <h2>Speakers</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker1.jpg" class="card-img-top" alt="Sondra Samuels photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sondra Samuels</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker2.jpg" class="card-img-top" alt="Jonathan Andrew photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jonathan Andrew</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker3.jpg" class="card-img-top" alt="David Duke photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">David Duke</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker4.jpg" class="card-img-top" alt="Samantha Zoe photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Samantha Zoe</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker2.jpg" class="card-img-top" alt="Jonathan Andrew photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jonathan Andrew</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker1.jpg" class="card-img-top" alt="Sondra Samuels photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sondra Samuels</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker4.jpg" class="card-img-top" alt="Samantha Zoe photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Samantha Zoe</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  mt-5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/images/speaker3.jpg" class="card-img-top" alt="David Duke photo">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">David Duke</h5>
+                                <p class="card-text">Lorem ipsum</p>
+                                <div class="social-connect">
+                                    <a href="#" target="_blank">
+                                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span><span class="path3"></span><span
+                                                class="path4"></span></span>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                class="path2"></span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--===== Speakers Section =====-->
+
+        <!--===== Registration Section =====-->
+        <div class="container-fluid section registration-section">
+            <div class="container-lg">
+                <div class="section-title dark">
+                    <h2 class="text-lg-start">Registration</h2>
+                </div>
+
+                <!-- registration ticket -->
+                <div class="registration-ticket bg-light-yellow mt-5">
+                    <div class="row">
+                        <div class="col-md-9 col-8">
+                            <div class="left-section">
+                                <h3 class="text-start">Maiores alias conseua tur aut nerferen dis eveniet</h3>
+                                <div class="date-time">
+                                    <span class="icon-calendar registration-tickket"></span>
+                                    <span class="ms-2">24 - 26 October, 2023 (Tuesday - Thursday)</span>
+                                </div>
+                                <div class="date-time">
+                                    <span class="icon-location registration-tickket"></span>
+                                    <span class="ms-2">Prism club, Midtown</span>
+                                </div>
+                                <a href="#" class="btn btn-lg btn-secondary d-inline-flex">
+                                    <span class="icon-icon-calendar-white white-calendar-icon"></span>
+                                    <h6 class="mb-0 ms-md-3 ms-2">Add to calendar</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-4 p-0">
+                            <div class="right-section">
+                                <div class="ticket-price">
+                                    <span>$49.00</span>
+                                    <p>/member</p>
+                                </div>
+                                <div class="total-members">
+                                    <span>Members</span>
+                                    <input type="number" placeholder="00">
+                                </div>
+                                <a href="#" class="btn btn-lg btn-secondary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- registration ticket -->
+
+                <!-- Inclusion with registration -->
+                <div class="inclusion-with-registration">
+                    <div class="section-title">
+                        <h3>Inclusion with registration:</h3>
+                    </div>
+                    <div class="detail">
+                        <ul>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam </li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam </li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam </li>
+                            <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Inclusion with registration -->
+
+                <!-- Cancellation policy -->
+                <div class="cancellation-policy">
+                    <div class="title">
+                        <h3>Cancellation policy:</h3>
+                    </div>
+                    <div class="detail">
+                        <p class="py-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+                            <a href="#">View DittMøte Terms and Conditions</a>
+                        </p>
+                    </div>
+                    <div class="location-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.0517600133!2d-95.73093253682289!3d29.817364695169356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1689859055405!5m2!1sen!2sin"
+                            width="100" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                    </div>
+                </div>
+                <!-- Cancellation policy -->
+
+            </div>
+        </div>
+        <!--===== Registration Section =====-->
+
+        <!--===== FAQ Section =====-->
+        <div class="faq-section container-fluid section bg-light-blue">
+            <div class="container-md">
+                <div class="section-title dark">
+                    <h2>Frequently asked questions</h2>
+                </div>
+                <div class="questions">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi
+                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                        voluptas
+                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                        ratione
+                                        voluptatem sequi nesciunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi
+                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                        voluptas
+                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                        ratione
+                                        voluptatem sequi nesciunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi
+                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                        voluptas
+                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                        ratione
+                                        voluptatem sequi nesciunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi
+                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                        voluptas
+                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                        ratione
+                                        voluptatem sequi nesciunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi
+                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                        voluptas
+                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                        ratione
+                                        voluptatem sequi nesciunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                        quasi
+                                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                        voluptas
+                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                        ratione
+                                        voluptatem sequi nesciunt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== FAQ Section =====-->
+
+
+        <!--===== Contact Form Section =====-->
+        <div class="contact-form-section container-fluid section">
+            <div class="container-md">
+                <div class="section-title dark">
+                    <h2>Still have a question?</h2>
+                    <h5>Can’t find the answer you’re looking for? Ask your question here</h5>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-9 mx-auto">
+                        <div class="contact-form p-4">
+                            <form class="mb-0">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" class="form-control" id="first-name"
+                                                aria-describedby="first Name" placeholder="First Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" class="form-control" id="last-name"
+                                                aria-describedby="last Name" placeholder="Last Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="email" class="form-control" id="email" aria-describedby="email"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="tel" class="form-control" id="phone" aria-describedby="phone"
+                                                placeholder="Phone">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mb-4">
+                                            <textarea class="p-2" name="" id="" rows="3"
+                                                placeholder="Your Question"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="text-end">
+                                    <button type="button" name="" id="" class="btn btn-lg btn-primary">Submit</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== Contact Form Section =====-->
+
+
+
+    </main>
+
+
+    <!--===== Footer Section =====-->
+    <footer class="container-fluid bg-black py-5 about-section">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/Logo-light.svg" class="img-fluid" alt="Dittmøte Logo">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-sm-end mt-sm-0 mt-3">
+                        <li class="ms-sm-4">
+                            <a href="#">
+                                <span class="icon-facebook footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-instagram footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-twitter footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-youtube footer-social-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row links-contact d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="about-us.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="privacy-policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-and-condition.html">Terms and conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0 text-lg-end">
+                    <h5>
+                        Stay up to date with
+                        <span class="text-blue">Ditt</span>møte
+                    </h5>
+
+                    <div class="contact-container">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            <span class="icon-arrow-right footer-social-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white text-start small h-100 d-flex align-items-center">&copy; 2023 Dittmøte.
+                        All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="dropdown d-flex align-items-center justify-content-end">
+                        <button class="btn dropdown-toggle language text-white small" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/uk.svg" class="me-1" alt="language"> English
+                        </button>
+                        <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/uk.svg"
+                                        alt="united kingdom flag" class="me-1"> English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/norway.svg" alt="norway flag"
+                                        class="me-1"> Norwegian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--===== Footer Section =====-->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-select.js"></script>
+
+</body>
+
+</html>

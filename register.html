@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Dittmøte</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme Fonts -->
+
+      <!-- Montserrat -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+      <!-- Cinzel -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+      <!-- select2 css links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+  </head>
+
+  <body class="pt-0">
+    <main class="min-vh-100 d-flex pt-5 flex-column">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12 text-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Logo.svg" class="img-fluid" alt="Dittmøte Logo">
+              </a>
+            </div>
+
+            <div class="col-md-12 mt-5 mb-3">
+              <div class="section-title">
+                <h3 class="text-dark-blue">Create an account</h3>
+              </div>
+            </div>
+
+            <div class="col-xl-5 col-md-8 onboarding-form registration-form">
+              <form>
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                      <div class="tabing-switch">
+                        <div class="tabs mb-3">
+                          <input type="radio" id="radio-1" name="tabs" checked />
+                          <label class="tab" for="radio-1">Normal User/Speaker</label>
+                          <input type="radio" id="radio-2" name="tabs" />
+                          <label class="tab" for="radio-2">Church</label>
+                          <span class="glider"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                          <label for="select-profile" class="form-label">Create Account As</label>
+                          <select class="form-select select-2 mb-3" id="select-profile"
+                              data-placeholder="select-profile">
+                              <option value="user">User</option>
+                              <option value="speaker">Speaker</option>
+                              <option value="organizer">Organizer</option>
+                          </select>
+                          <div class="mt-2 bg-light-sky p-2 rounded">
+                              <span class="fs-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae tenetur esse porro magnam</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="organizer-name">
+                        <div class="mb-3">
+                            <label for="organizer-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="organizer-name" aria-describedby="organizer-name" placeholder="Name">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6" id="not-organizer-name">
+                        <div class="mb-3">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="First Name" placeholder="First Name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="organizer-number">
+                        <div class="mb-3">
+                            <label for="organization-number" class="form-label">Organization Number</label>
+                            <input type="text" class="form-control" id="organization-number" aria-describedby="organization-number" placeholder="Organization Number">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6" id="organizer-not-select">
+                        <div class="mb-3">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" aria-describedby="Last Name" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+                      </div>
+                  </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12" id="organizer-select">
+                      <div class="mb-3">
+                        <label for="domination" class="form-label">Domination</label>
+                          <select class="form-select select-2 mb-3" id="domination"
+                              data-placeholder="Select Domination">
+                              <option>Domination 1</option>
+                              <option>Domination 2</option>
+                              <option>Domination 3</option>
+                              <option>Domination 4</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="d-grid gap-2 mb-4">
+                  <button type="button" name="" id="" class="btn btn-lg btn-primary">Sign Up</button>
+                </div>
+
+                <div class="mb-3 text-end">
+                  <p class="ms-auto text-dark-blue">Already have an account? <a href="login.html"><b>Sign in</b></a></p>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="onboarding-footer mt-auto bg-white">
+        <div class="container border-top pt-3">
+          <div class="row">
+            <div class="col-sm-6">
+              <ul class="list-unstyled d-flex">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 text-sm-end">
+              <p class="mb-0">© 2023 Dittmøte. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    
+    <!-- select to initialization script -->
+    <script>
+      $('#select-profile, #domination').select2({
+          minimumResultsForSearch: -1
+      });
+  </script>
+  <!-- select to initialization script -->
+
+  <script>
+    $(document).ready(function(){
+      $('#organizer-select, #organizer-number, #organizer-name').hide();
+      $('#select-profile').change(function() {
+          var selectedValue = $(this).val();
+          if (selectedValue === 'organizer') {
+              $('#organizer-select, #organizer-number, #organizer-name').show();
+              $('#organizer-not-select, #not-organizer-name').hide();
+            } else {
+              $('#organizer-select, #organizer-number, #organizer-name').hide();
+              $('#not-organizer-name, #organizer-not-select').show();
+          }
+      });
+    });
+ </script>
+
+  </body>
+
+</html>

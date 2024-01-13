@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Dittmøte</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme Fonts -->
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Css -->
+
+</head>
+
+<body class="speaker-detail-body">
+    <main>
+        <!--===== Navigation =====-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top dittmote-navigation shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/Logo.svg" class="img-fluid" alt="Dittmøte Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#responsive-navigation" aria-controls="responsive-navigation" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="responsive-navigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="d-flex align-items-center nav-link dropdown-toggle justify-content-center"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="user-image me-2">
+                                    <img src="assets/images/user.png" alt="user">
+                                </div>
+                                User
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="profile.html">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="manage-event.html">Manage Events</a></li>
+                                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                <li><a class="dropdown-item" href="#">Support Tickets</a></li>
+                                <li><a class="dropdown-item" href="login.html">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <button class="btn btn-primary ms-lg-4" onclick="relocate_login()">
+            Login
+          </button> -->
+                </div>
+
+            </div>
+        </nav>
+        <!--===== Navigation =====-->
+
+        <!--===== Speaker detail section =====-->
+        <div class="speaker-detail-section section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto p-4 top-section bg-light-gray">
+                        <div class="row">
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="speaker-img me-4">
+                                    <img src="https://source.unsplash.com/random/150x150?person" alt="speaker image">
+                                </div>
+                                <div class="speaker-information">
+                                    <h5 class="mb-1">Sondra Samuels</h5>
+                                    <div class="social-connect mt-2">
+                                        <a href="#" class="d-inline-block" target="_blank">
+                                            <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                                                    class="path2"></span></span>
+                                        </a>
+                                        <a href="#" class="d-inline-block" target="_blank">
+                                            <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                                                    class="path2"></span><span class="path3"></span><span
+                                                    class="path4"></span></span>
+                                        </a>
+                                        <a href="#" class="d-inline-block" target="_blank">
+                                            <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                                                    class="path2"></span></span>
+                                        </a>
+                                    </div>
+                                    <div class="speaker-likes mt-1 d-flex align-items-center">
+                                        <span>
+                                            <i class="fa fa-star star full-star" aria-hidden="true"></i>
+                                        </span>
+                                        <h6 class="card-subtitle mx-2">4.5</h6>
+                                        <small>(112)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center justify-content-md-center mt-md-0 mt-3">
+                                <div>
+                                    <p class="d-flex align-items-center mb-2"><span
+                                            class="icon-icon-phone contact-icon me-2"></span> +1-202-555-0179</p>
+                                    <p class="d-flex align-items-center mb-2"><span
+                                            class="icon-icon-mail contact-icon me-2"></span> demospeaker@gmail.com</p>
+                                    <p class="d-flex align-items-center mb-2"><span
+                                            class="icon-location contact-icon me-2"></span> City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mx-auto p-4 description bg-light-gray">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed esse deleniti ea quibusdam
+                            doloremque deserunt veniam id fuga ipsum culpa a sunt quam non aliquam dignissimos modi
+                            aliquid, inventore laborum.</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed esse deleniti ea quibusdam
+                            doloremque deserunt veniam id fuga ipsum culpa a sunt quam non aliquam dignissimos modi
+                            aliquid, inventore laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                            esse deleniti ea quibusdam doloremque deserunt veniam id fuga ipsum culpa a sunt quam
+                            non aliquam dignissimos modi aliquid, inventore laborum.</p>
+                    </div>
+                    <div class="col-md-8 mx-auto p-4 last-section onboarding-form bg-light-gray">
+                        <div class="my-calendar">
+                            <div id='calendar'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== Speaker detail section =====-->
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-black py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/Logo-light.svg" class="img-fluid" alt="Dittmøte Logo">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-sm-end mt-sm-0 mt-3">
+                        <li class="ms-sm-4">
+                            <a href="#">
+                                <span class="icon-facebook footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-instagram footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-twitter footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-youtube footer-social-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row links-contact d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="about-us.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="privacy-policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-and-condition.html">Terms and conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0 text-lg-end">
+                    <h5>
+                        Stay up to date with
+                        <span class="text-blue">Ditt</span>møte
+                    </h5>
+
+                    <div class="contact-container">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            <span class="icon-arrow-right footer-social-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white text-start small h-100 d-flex align-items-center">&copy; 2023 Dittmøte.
+                        All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="dropdown d-flex align-items-center justify-content-end">
+                        <button class="btn dropdown-toggle language text-white small" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/uk.svg" class="me-1" alt="language"> English
+                        </button>
+                        <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/uk.svg"
+                                        alt="united kingdom flag" class="me-1"> English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/norway.svg" alt="norway flag"
+                                        class="me-1">
+                                    Norwegian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-select.js"></script>
+
+    <!-- full calendar js -->
+    <script src="js/index.global.js"></script>
+    <!-- full calendar js -->
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+          var calendarEl = document.getElementById('calendar');
+      
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+            },
+            // initialDate: '2023-01-12',
+            navLinks: true, // can click day/week names to navigate views
+            nowIndicator: true,
+      
+            weekNumbers: true,
+            weekNumberCalculation: 'ISO',
+      
+            editable: true,
+            selectable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+              {
+                title: 'All Day Event',
+                start: '2023-08-01'
+              },
+              {
+                title: 'Long Event',
+                start: '2023-08-07',
+                end: '2023-08-10'
+              },
+              {
+                groupId: 999,
+                title: 'Repeating Event',
+                start: '2023-08-09T16:00:00'
+              },
+              {
+                groupId: 999,
+                title: 'Repeating Event',
+                start: '2023-08-16T16:00:00'
+              },
+              {
+                title: 'Conference',
+                start: '2023-08-11',
+                end: '2023-08-13'
+              },
+              {
+                title: 'Meeting',
+                start: '2023-08-12T10:30:00',
+                end: '2023-08-12T12:30:00'
+              },
+              {
+                title: 'Lunch',
+                start: '2023-08-12T12:00:00'
+              },
+              {
+                title: 'Meeting',
+                start: '2023-08-12T14:30:00'
+              },
+              {
+                title: 'Happy Hour',
+                start: '2023-08-12T17:30:00'
+              },
+              {
+                title: 'Dinner',
+                start: '2023-08-12T20:00:00'
+              },
+              {
+                title: 'Meeting',
+                start: '2023-08-13T07:00:00'
+              },
+              {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2023-08-28'
+              }
+            ]
+          });
+      
+          calendar.render();
+        });
+      
+      </script>
+
+</body>
+
+</html>
+
+
+<script>
+    function relocate_login() {
+        location.href = "login.html";
+    }
+
+    $(".favourite-event").click(function () {
+        $(".icon-heart-fill").toggleClass("d-none");
+        $(".icon-heart-blank").toggleClass("d-none");
+    });
+</script>

@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon.eot?7wc0g1');
+    src: url('../assets/fonts/icomoon.eot?7wc0g1#iefix') format('embedded-opentype'),
+        url('../assets/fonts/icomoon.ttf?7wc0g1') format('truetype'),
+        url('../assets/fonts/icomoon.woff?7wc0g1') format('woff'),
+        url('../assets/fonts/icomoon.svg?7wc0g1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-search:before {
+    content: "\e901";
+    color: #023763;
+  }
+  .icon-icon-phone:before {
+    content: "\e907";
+    color: #023763;
+  }
+  .icon-icon-mail:before {
+    content: "\e91e";
+    color: #023763;
+  }
+  .icon-icon-calendar-white:before {
+    content: "\e91f";
+    color: #fff;
+  }
+  .icon-heart-fill:before {
+    content: "\e920";
+    color: #f14336;
+  }
+  .icon-heart-blank .path1:before {
+    content: "\e921";
+    color: rgb(255, 255, 255);
+    opacity: 0.36;
+  }
+  .icon-heart-blank .path2:before {
+    content: "\e922";
+    margin-left: -1em;
+    color: rgb(2, 55, 99);
+    opacity: 0.36;
+  }
+  .icon-upcoming-meetings-ico:before {
+    content: "\e923";
+    color: #a4b7c7;
+  }
+  .icon-upcoming-events:before {
+    content: "\e924";
+    color: #a4b7c7;
+  }
+
+.icon-arrow-right:before {
+    content: "\e900";
+    color: #03ADEE;
+}
+
+.icon-arrow-left:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.icon-calendar:before {
+    content: "\e903";
+    color: #03ADEE;
+}
+
+.icon-column:before {
+    content: "\e904";
+    color: #A4B7C7;
+}
+
+.icon-facebook-round .path1:before {
+    content: "\e905";
+    color: #ECB61F;
+}
+
+.icon-facebook-round .path2:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-facebook:before {
+    content: "\e908";
+    color: #03ADEE;
+}
+
+.icon-google .path1:before {
+    content: "\e909";
+    color: rgb(0, 0, 0);
+}
+
+.icon-google .path2:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-google .path3:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-google .path4:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-grid:before {
+    content: "\e90d";
+    color: #A4B7C7;
+}
+
+.icon-insta-round .path1:before {
+    content: "\e90e";
+    color: #ECB61F;
+}
+
+.icon-insta-round .path2:before {
+    content: "\e90f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-insta-round .path3:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-insta-round .path4:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-instagram:before {
+    content: "\e912";
+    color: #03ADEE;
+}
+
+.icon-list:before {
+    content: "\e913";
+    color: #A4B7C7;
+}
+
+.icon-location:before {
+    content: "\e914";
+    color: #A4B7C7;
+}
+
+.icon-map:before {
+    content: "\e915";
+    color: #03ADEE;
+}
+
+.icon-seat:before {
+    content: "\e916";
+    color: #03ADEE;
+}
+
+.icon-slider:before {
+    content: "\e917";
+    color: #A4B7C7;
+}
+
+.icon-speaker:before {
+    content: "\e918";
+    color: #03ADEE;
+}
+
+.icon-ticket:before {
+    content: "\e919";
+    color: #03ADEE;
+}
+
+.icon-twitter-round .path1:before {
+    content: "\e91a";
+    color: #ECB61F;
+}
+
+.icon-twitter-round .path2:before {
+    content: "\e91b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-twitter:before {
+    content: "\e91c";
+    color: #03ADEE;
+}
+
+.icon-youtube:before {
+    content: "\e91d";
+    color: #03ADEE;
+}
+
+
+/* font size for diffrent icons */
+.social-icon {
+    font-size: 1.8rem;
+    display: inherit;
+}
+
+.tabing-icon {
+    font-size: 1.4rem;
+    display: flex;
+}
+
+.custom-tabs .nav-item .nav-link.active .tabing-icon::before {
+    color: #ffffff;
+}
+
+.meeting-icon {
+    font-size: 1.25rem;
+}
+.arrow-icon{
+    font-size: 0.75rem;
+}
+.meeting-calendar{
+    font-size: 1.25rem;
+}
+.btn.btn-outline-primary:hover .meeting-calendar::before{
+    color: #FFFFFF;
+}
+.event-tabing-icon{
+    font-size: 0.8rem;
+}
+.custom-tabs .nav-item .nav-link.active .event-tabing-icon::before{
+    color: #FFFFFF;
+}
+.footer-social-icon{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.footer-social-icon.icon-arrow-right:before{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+.event-detail-icon{
+    font-size: 1.8rem;
+}
+.registration-tickket:before{
+    color: #ECB61F;
+    font-size: 1.9rem;
+}
+.contact-icon::before{
+    font-size: 1.6rem;
+    color: #013763;
+}
+.search-icon{
+    font-size: 1.3rem;
+}
+.search-filter-section .nav-item .nav-link.active .upcoming-event-icon::before{
+    color: #FFFFFF;
+}
+.upcoming-event-icon{
+    font-size: 1.4rem;
+}
+.white-calendar-icon{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Dittmøte</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme Fonts -->
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+</head>
+
+<body class="contact-us-body">
+    <main>
+        <!--===== Navigation =====-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top dittmote-navigation shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/Logo.svg" class="img-fluid" alt="Dittmøte Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#responsive-navigation" aria-controls="responsive-navigation" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="responsive-navigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary ms-lg-4" onclick="relocate_login()">
+                        Login
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+        <!--===== Navigation =====-->
+
+        <!--===== Home Section =====-->
+        <div class="hero-banner-sm contact-us">
+            <div class="container">
+                <h2 class="text-center">Contact Us</h2>
+            </div>
+        </div>
+        <!--===== Home Section =====-->
+
+
+        <!--===== Social Link Section =====-->
+        <div class="social-link-section container-fluid section mt-5 mt-md-0 bg-light-gray-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row">
+                            <div class="col-md-4 p-0">
+                                <div class="social-link my-4 my-md-0 ">
+                                    <div class="social-icon bg-light-blue">
+                                        <span class="icon-icon-phone contact-icon"></span>
+                                    </div>
+                                    <span class="text-dark-blue my-2">Phone</span>
+                                    <p>+1-202-555-0179</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <div class="social-link decoration-line mb-4 mb-md-0">
+                                    <div class="social-icon bg-light-blue">
+                                        <span class="icon-icon-mail contact-icon"></span>
+                                    </div>
+                                    <span class="text-dark-blue my-2">Email</span>
+                                    <p>info@dittmote.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <div class="social-link mb-4 mb-md-0">
+                                    <div class="social-icon bg-light-blue">
+                                        <span class="icon-location contact-icon"></span>
+                                    </div>
+                                    <span class="text-dark-blue my-2">Address</span>
+                                    <p class="w-75">Dummy Address, 101 Street,
+                                        City name, 0002</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== Social Link Section =====-->
+
+        <!--===== Contact Form Section =====-->
+        <div class="contact-form-section container-fluid section">
+            <div class="container-md">
+                <div class="section-title dark">
+                    <h2 class="text-dark-blue">Let’s get in touch</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-9 mx-auto">
+                        <div class="contact-form p-4">
+                            <form class="mb-0">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" class="form-control" id="full-name"
+                                                aria-describedby="Full Name" placeholder="Full Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" class="form-control" id="organization-church"
+                                                aria-describedby="Organization/Church"
+                                                placeholder="Organization/Church">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="email" class="form-control" id="email" aria-describedby="email"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="tel" class="form-control" id="phone" aria-describedby="phone"
+                                                placeholder="Phone">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mb-4">
+                                            <textarea id="" rows="3"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="text-end">
+                                    <button type="button" id="" class="btn btn-lg btn-primary">Submit</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== Contact Form Section =====-->
+
+
+    </main>
+    <!--===== Footer Section =====-->
+    <footer class="container-fluid bg-black py-5 about-section">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/Logo-light.svg" class="img-fluid" alt="Dittmøte Logo">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-sm-end mt-sm-0 mt-3">
+                        <li class="ms-sm-4">
+                            <a href="#">
+                                <span class="icon-facebook footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-instagram footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-twitter footer-social-icon"></span>
+                            </a>
+                        </li>
+                        <li class="ms-4">
+                            <a href="#">
+                                <span class="icon-youtube footer-social-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row links-contact d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="about-us.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="privacy-policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-and-condition.html">Terms and conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0 text-lg-end">
+                    <h5>
+                        Stay up to date with
+                        <span class="text-blue">Ditt</span>møte
+                    </h5>
+
+                    <div class="contact-container">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit">
+                            <span class="icon-arrow-right footer-social-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white text-start small h-100 d-flex align-items-center">&copy; 2023 Dittmøte.
+                        All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="dropdown d-flex align-items-center justify-content-end">
+                        <button class="btn dropdown-toggle language text-white small" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/uk.svg" class="me-1" alt="language"> English
+                        </button>
+                        <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/uk.svg"
+                                        alt="united kingdom flag" class="me-1"> English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="assets/images/norway.svg" alt="norway flag"
+                                        class="me-1"> Norwegian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--===== Footer Section =====-->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-select.js"></script>
+
+</body>
+
+</html>
+<script>
+    function relocate_login() {
+        location.href = "login.html";
+    }
+</script>

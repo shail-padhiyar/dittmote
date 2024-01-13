@@ -1,0 +1,1913 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.112.5">
+  <title>Dittmøte</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Theme Fonts -->
+
+  <!-- Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- select2 css links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/icons.css" rel="stylesheet">
+
+  <!-- Font Awesome Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome Css -->
+  
+  <!-- Daterange Picker Css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!-- Daterange Picker Css -->
+
+</head>
+
+<body class="append-select2 searchbar-padding">
+  <main>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top dittmote-navigation shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/Logo.svg" class="img-fluid" alt="Dittmøte Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsive-navigation"
+          aria-controls="responsive-navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center position-relative" id="responsive-navigation">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
+            <li class="nav-item search d-lg-inline-block d-none cursor-pointer">
+              <a class="nav-link px-1"><span class="icon-search search-icon"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="d-flex align-items-center nav-link dropdown-toggle justify-content-center pt-1" href="#"
+                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="user-image me-2">
+                  <img src="assets/images/user.png" alt="user">
+                </div>
+                Org. User
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="profile.html">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="manage-event.html">Manage Events</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><a class="dropdown-item" href="#">Support Tickets</a></li>
+                <li><a class="dropdown-item" href="login.html">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search-filter-section header d-none">
+            <div class="left-section d-flex align-items-center">
+              <input type="text" placeholder="Search church, pastor, songs or event" class="ps-2">
+              <span class="icon-search search-icon cursor-pointer"></span>
+              <svg class="cursor-pointer close-header-search ms-2" height="12" viewBox="0 0 329.26933 329" width="12" xmlns="http://www.w3.org/2000/svg"
+                        id="fi_1828778">
+                        <path
+                          d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0">
+                        </path>
+                </svg>
+            </div>
+          </div>
+          <!-- <button class="btn btn-primary ms-lg-4" onclick="relocate_login()">
+            Login
+          </button> -->
+        </div>
+      </div>
+        
+      <div class="search-filter-section d-lg-none d-flex w-100">
+        <div class="left-section mx-auto d-flex align-items-center px-2 py-1 w-75">
+          <input type="text" placeholder="Search..">
+          <span class="icon-search search-icon"></span>
+        </div>
+      </div>
+        
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="container-fluid px-0">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators d-none d-md-block">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="effect-primary active"
+            aria-label="Slide 1">Our
+            <br>Mission</button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" class="effect-yellow"
+            aria-label="Slide 2">Find
+            <br>Meetings</button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption text-start">
+              <h2>Find your
+                <br>Next Meeting
+              </h2>
+              <a href="#" class="btn btn-lg btn-primary mt-md-3 mt-lg-4">Read our mission</a>
+            </div>
+
+            <img src="assets/images/slide-1.png" class="img-fluid" alt="slide-1 image">
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-caption text-start">
+              <h2>Find an event
+                <br>happening near you
+              </h2>
+              <a href="#" class="btn btn-lg btn-secondary mt-md-3 mt-lg-4">Find meeting</a>
+            </div>
+
+            <img src="assets/images/slide-2.png" class="img-fluid" alt="slide-2 image">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- About Section -->
+    <div class="container-fluid bg-light-blue section about-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-9">
+            <div class="section-title dark">
+              <h2>We are
+                <span class="text-blue">Ditt</span>møte
+              </h2>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat. Duis aute irure dolor in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakers Section -->
+    <div class="container-fluid section speakers-section">
+      <div class="container">
+        <div class="section-title dark">
+          <h2>Meeting speakers</h2>
+        </div>
+
+        <!-- <div class="row mt-5">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="card h-100">
+              <div class="favourite-speaker">
+                <span class="icon-heart-fill d-none"></span>
+                <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+              </div>
+              <div class="card-image">
+                <a href="speaker-detail.html">
+                  <img src="assets/images/speaker1.jpg" class="card-img-top" alt="Sondra Samuels photo">
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="speaker-detail.html" class="text-decoration-none">
+                  <h5 class="card-title">Sondra Samuels</h5>
+                </a>
+                <div class="social-connect">
+                  <a href="#" target="_blank">
+                    <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                        class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="card h-100">
+              <div class="favourite-speaker">
+                <span class="icon-heart-fill d-none"></span>
+                <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+              </div>
+              <div class="card-image">
+                <a href="speaker-detail.html">
+                  <img src="assets/images/speaker2.jpg" class="card-img-top" alt="Jonathan Andrew photo">
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="speaker-detail.html" class="text-decoration-none">
+                  <h5 class="card-title">Jonathan Andrew</h5>
+                  <p class="card-text mb-3">Lorem ipsum</p>
+                </a>
+                <div class="social-connect">
+                  <a href="#" target="_blank">
+                    <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                        class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="card h-100">
+              <div class="favourite-speaker">
+                <span class="icon-heart-fill d-none"></span>
+                <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+              </div>
+              <div class="card-image">
+                <a href="speaker-detail.html">
+                  <img src="assets/images/speaker3.jpg" class="card-img-top" alt="David Duke photo">
+                </a>
+              </div>
+              <div class="card-body  d-flex flex-column justify-content-between">
+                <a href="speaker-detail.html" class="text-decoration-none">
+                  <h5 class="card-title">David Duke</h5>
+                  <p class="card-text mb-3">Lorem ipsum</p>
+                </a>
+                <div class="social-connect">
+                  <a href="#" target="_blank">
+                    <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                        class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="card h-100">
+              <div class="favourite-speaker">
+                <span class="icon-heart-fill d-none"></span>
+                <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+              </div>
+              <div class="card-image">
+                <a href="speaker-detail.html">
+                  <img src="assets/images/speaker4.jpg" class="card-img-top" alt="Samantha Zoe photo">
+                </a>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <a href="speaker-detail.html" class="text-decoration-none">
+                  <h5 class="card-title">Samantha Zoe</h5>
+                  <p class="card-text mb-3">Lorem ipsum</p>
+                </a>
+                <div class="social-connect">
+                  <a href="#" target="_blank">
+                    <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                        class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                        class="path2"></span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div id="speakerCarousel" class="speaker-carousel carousel slide container mt-5" data-bs-ride="carousel">
+          <div class="carousel-inner w-100">
+            <div class="carousel-item active">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card h-100">
+                  <div class="favourite-speaker">
+                    <span class="icon-heart-fill d-none"></span>
+                    <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                  </div>
+                  <div class="card-image">
+                    <a href="speaker-detail.html">
+                      <img src="assets/images/speaker1.jpg" class="card-img-top" alt="Sondra Samuels photo">
+                    </a>
+                  </div>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <a href="speaker-detail.html" class="text-decoration-none">
+                      <h5 class="card-title">Sondra Samuels</h5>
+                    </a>
+                    <div class="social-connect">
+                      <a href="#" target="_blank">
+                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                            class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card h-100">
+                  <div class="favourite-speaker">
+                    <span class="icon-heart-fill d-none"></span>
+                    <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                  </div>
+                  <div class="card-image">
+                    <a href="speaker-detail.html">
+                      <img src="assets/images/speaker2.jpg" class="card-img-top" alt="Jonathan Andrew photo">
+                    </a>
+                  </div>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <a href="speaker-detail.html" class="text-decoration-none">
+                      <h5 class="card-title">Jonathan Andrew</h5>
+                      <p class="card-text mb-3">Lorem ipsum</p>
+                    </a>
+                    <div class="social-connect">
+                      <a href="#" target="_blank">
+                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                            class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card h-100">
+                  <div class="favourite-speaker">
+                    <span class="icon-heart-fill d-none"></span>
+                    <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                  </div>
+                  <div class="card-image">
+                    <a href="speaker-detail.html">
+                      <img src="assets/images/speaker3.jpg" class="card-img-top" alt="David Duke photo">
+                    </a>
+                  </div>
+                  <div class="card-body  d-flex flex-column justify-content-between">
+                    <a href="speaker-detail.html" class="text-decoration-none">
+                      <h5 class="card-title">David Duke</h5>
+                      <p class="card-text mb-3">Lorem ipsum</p>
+                    </a>
+                    <div class="social-connect">
+                      <a href="#" target="_blank">
+                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                            class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card h-100">
+                  <div class="favourite-speaker">
+                    <span class="icon-heart-fill d-none"></span>
+                    <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                  </div>
+                  <div class="card-image">
+                    <a href="speaker-detail.html">
+                      <img src="assets/images/speaker4.jpg" class="card-img-top" alt="Samantha Zoe photo">
+                    </a>
+                  </div>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <a href="speaker-detail.html" class="text-decoration-none">
+                      <h5 class="card-title">Samantha Zoe</h5>
+                      <p class="card-text mb-3">Lorem ipsum</p>
+                    </a>
+                    <div class="social-connect">
+                      <a href="#" target="_blank">
+                        <span class="icon-facebook-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-insta-round social-icon"><span class="path1"></span><span
+                            class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                      </a>
+                      <a href="#" target="_blank">
+                        <span class="icon-twitter-round social-icon"><span class="path1"></span><span
+                            class="path2"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#speakerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30.5454 10.0977H4.96556L12.6645 2.47577C12.8035 2.34294 12.9143 2.18404 12.9905 2.00836C13.0667 1.83267 13.1069 1.64372 13.1085 1.45251C13.1102 1.26131 13.0734 1.07169 13.0003 0.894721C12.9271 0.71775 12.8191 0.556971 12.6826 0.421766C12.546 0.28656 12.3836 0.179636 12.2048 0.107232C12.0261 0.034827 11.8345 -0.00160713 11.6414 5.43702e-05C11.4483 0.00171587 11.2574 0.0414401 11.0799 0.116909C10.9025 0.192378 10.742 0.302081 10.6078 0.439615L0.425875 10.5196C0.153188 10.7897 0 11.1559 0 11.5377C0 11.9195 0.153188 12.2857 0.425875 12.5558L10.6078 22.6358C10.8821 22.8981 11.2495 23.0432 11.6309 23.0399C12.0123 23.0367 12.3771 22.8852 12.6468 22.6182C12.9165 22.3512 13.0695 21.9901 13.0728 21.6125C13.0761 21.2349 12.9295 20.8712 12.6645 20.5996L4.96556 12.9777H30.5454C30.9312 12.9777 31.3012 12.826 31.574 12.5559C31.8468 12.2859 32 11.9196 32 11.5377C32 11.1558 31.8468 10.7895 31.574 10.5195C31.3012 10.2494 30.9312 10.0977 30.5454 10.0977Z"
+                  fill="black" />
+              </svg>
+
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#speakerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.45456 10.0977H27.0344L19.3355 2.47577C19.1965 2.34294 19.0857 2.18404 19.0095 2.00836C18.9333 1.83267 18.8931 1.64372 18.8915 1.45251C18.8898 1.26131 18.9266 1.07169 18.9997 0.894721C19.0729 0.71775 19.1809 0.556971 19.3174 0.421766C19.454 0.28656 19.6164 0.179636 19.7952 0.107232C19.9739 0.034827 20.1655 -0.00160713 20.3586 5.43702e-05C20.5517 0.00171587 20.7426 0.0414401 20.9201 0.116909C21.0975 0.192378 21.258 0.302081 21.3922 0.439615L31.5741 10.5196C31.8468 10.7897 32 11.1559 32 11.5377C32 11.9195 31.8468 12.2857 31.5741 12.5558L21.3922 22.6358C21.1179 22.8981 20.7505 23.0432 20.3691 23.0399C19.9877 23.0367 19.6229 22.8852 19.3532 22.6182C19.0835 22.3512 18.9305 21.9901 18.9272 21.6125C18.9239 21.2349 19.0705 20.8712 19.3355 20.5996L27.0344 12.9777H1.45456C1.06879 12.9777 0.698812 12.826 0.426029 12.5559C0.153248 12.2859 0 11.9196 0 11.5377C0 11.1558 0.153248 10.7895 0.426029 10.5195C0.698812 10.2494 1.06879 10.0977 1.45456 10.0977Z"
+                  fill="black" />
+              </svg>
+
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Meetings Section -->
+    <div class="container-fluid section speakers-section bg-light-gray">
+      <div class="container">
+        <div class="section-title dark">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-9">
+              <h2>Meetings</h2>
+              <h5>Organizing meetings for your ministry or personal life</h5>
+              <p>Find a local event, go on an outdoor trip with friends, or bring a simulcast event to your house or
+                church.
+                There's something for every family, age group, and ministry.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="d-lg-flex align-items-start justify-content-lg-between">
+
+              <div class="order-1">
+                <div class="filter-box ms-auto me-3">
+                  <label>Filter</label>
+                  <div class="custom-select">
+                    <select class="form-select select-2" id="filter-type-one" data-placeholder="Ticket Type">
+                      <option>By age group</option>
+                      <option>By area</option>
+                      <option>By Dates</option>
+                    </select>
+                  </div>
+                  <div class="custom-select hide-arrow">
+                    <select class="form-select select-2" id="meeting-for-one" data-placeholder="Ticket Type">
+                      <option>Meeting for all age group</option>
+                      <option>Meeting for womens</option>
+                      <option>Meeting for kids</option>
+                      <option>Meeting for students</option>
+                      <option>Meeting for adults</option>
+                    </select>
+                    <div class="clear-filter-ico">
+                      <svg height="11" viewBox="0 0 329.26933 329" width="11" xmlns="http://www.w3.org/2000/svg"
+                        id="fi_1828778">
+                        <path
+                          d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- <div class="date-range-picker filter">
+                    <input type="text" name="datetimes" />
+                  </div> -->
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs mb-3 mt-4 mt-lg-0 mb-md-0 custom-tabs me-auto" id="ex1" role="tablist">
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link active" id="meeting-tab-1" data-bs-toggle="tab" href="#meeting-tabs-1" role="tab"
+                    aria-controls="meeting-tabs-1" aria-selected="true">
+                    <span class="icon-grid tabing-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link" id="meeting-tab-2" data-bs-toggle="tab" href="#meeting-tabs-2" role="tab"
+                    aria-controls="meeting-tabs-2" aria-selected="false">
+                    <span class="icon-list tabing-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link" id="meeting-tab-3" data-bs-toggle="tab" href="#meeting-tabs-3" role="tab"
+                    aria-controls="meeting-tabs-3" aria-selected="false">
+                    <span class="icon-column tabing-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link" id="meeting-tab-4" data-bs-toggle="tab" href="#meeting-tabs-4" role="tab"
+                    aria-controls="meeting-tabs-4" aria-selected="false">
+                    <span class="icon-location tabing-icon"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item mt-sm-0 mt-2 cursor-pointer me-0 d-md-none toggleSidebarFilter" role="presentation">
+                  <a class="nav-link active">
+                    <svg version="1.1" fill="#FFF" id="fi_57164" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22"
+                      viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;"
+                      xml:space="preserve">
+                      <g>
+                        <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+                          c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+                          c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="nav nav-tabs mb-3 mt-4 mt-lg-0 mb-md-0 custom-tabs order-1 d-none d-md-inline-block"
+                role="tablist">
+                <li class="nav-item cursor-pointer me-0 toggleSidebarFilter" role="presentation">
+                  <a class="nav-link active">
+                    <svg version="1.1" fill="#FFF" id="fi_57164" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22"
+                      viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;"
+                      xml:space="preserve">
+                      <g>
+                        <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+                          c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+                          c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="tab-content" id="ex1-content">
+              <!-- Grid View -->
+              <div class="tab-pane fade show active" id="meeting-tabs-1" role="tabpanel"
+                aria-labelledby="meeting-tab-1">
+                <div class="row mt-5">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card grid-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <p class="meeting-event-time">Meeting will start in
+                          <span class="text-red">2 hours</span>
+                        </p>
+                        <h6 class="card-subtitle max-detail-1-line">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Alias, voluptate!
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none d-flex">
+                            <span class="icon-map meeting-icon ms-1 me-2"></span>
+                            <p class="max-detail-2-line">Prism club, Midtown Lorem ipsum, dolor sit amet consectetur
+                              adipisicing elit. Quod, a.</p>
+                          </a>
+                        </h6>
+
+                        <h5 class="card-title">Women's Leadership Forum Virtual</h5>
+                        <p class="card-text max-detail-3-line">We invite you to gather together online with other women
+                          in leadership for
+                          the Women's Forum. We invite you to gather together online with other women in leadership for
+                          the Women's Forum.</p>
+                        <a href="#" class="card-link">Register
+                          <span class="icon-arrow-right arrow-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card grid-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <p class="meeting-event-time">Meeting will start in
+                          <span class="text-red">2 hours</span>
+                        </p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none">
+                            <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                          </a>
+                        </h6>
+
+                        <h5 class="card-title">Women's Leadership Forum Virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum.</p>
+                        <a href="#" class="card-link">Register
+                          <span class="icon-arrow-right arrow-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card grid-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <p class="meeting-event-time">November 10-12, 2023</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none">
+                            <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                          </a>
+                        </h6>
+
+                        <h5 class="card-title">Women's Leadership Forum Virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum.</p>
+                        <a href="#" class="card-link">Register
+                          <span class="icon-arrow-right arrow-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card grid-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <p class="meeting-event-time">November 22-24, 2023</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none">
+                            <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                          </a>
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none">
+                            <svg version="1.1" class="mx-1" fill="#03ADEE" height="18" width="18" x="0px" y="0px"
+                              viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                            <g>
+                              <polygon points="253.381,206.25 253.381,299.157 253.381,299.465 310,299.465 310,238.977 	"/>
+                              <polygon points="0,299.465 56.619,299.465 56.619,299.157 56.619,206.178 0,238.977 	"/>
+                              <path d="M66.619,174.559v124.598h58.047v-52.825c0-16.568,13.432-30,30-30h0.668c16.568,0,30,13.432,30,30v52.825h58.047V174.559
+                                L155,101.247L66.619,174.559z"/>
+                              <polygon points="27.502,161.587 42.498,179.785 155,87.083 267.502,179.785 282.498,161.587 162,62.297 162,40.202 183.631,40.202 
+                                183.631,26.202 162,26.202 162,10.535 148,10.535 148,26.202 126.369,26.202 126.369,40.202 148,40.202 148,62.297 	"/>
+                            </g>
+                            </svg>
+
+                            Church
+                          </a>
+                        </h6>
+
+                        <h5 class="card-title">Women's Leadership Forum Virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum.</p>
+                        <a href="#" class="card-link">Register
+                          <span class="icon-arrow-right arrow-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card grid-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <p class="meeting-event-time">November 10-12, 2023</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none">
+                            <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                          </a>
+                        </h6>
+
+                        <h5 class="card-title">Women's Leadership Forum Virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum.</p>
+                        <a href="#" class="card-link">Register
+                          <span class="icon-arrow-right arrow-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card grid-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <p class="meeting-event-time">November 22-24, 2023</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <a href="church-detail.html" class="text-decoration-none">
+                            <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                          </a>
+                        </h6>
+
+                        <h5 class="card-title">Women's Leadership Forum Virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum.</p>
+                        <a href="#" class="card-link">Register
+                          <span class="icon-arrow-right arrow-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <a href="#" class="btn btn-lg btn-primary mt-md-3 mt-lg-5">View all meetings</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- List View -->
+              <div class="tab-pane fade" id="meeting-tabs-2" role="tabpanel" aria-labelledby="meeting-tab-2">
+                <div class="row mt-5">
+
+                  <div class="col-md-12">
+                    <div class="card list-view-card">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-3 meeting-event-time d-flex flex-row align-items-center">
+                          <span class="big-text text-red">02</span>
+                          <h6>hours left</h6>
+                        </div>
+
+                        <div class="col-md-8 col-lg-7">
+                          <div class="card-body d-flex flex-row align-items-center text-start">
+                            <div class="meeting-event-image">
+                              <img src="assets/images/event-1-square.jpg" class="img-fluid rounded-round"
+                                alt="meeting-1 image">
+                            </div>
+                            <div>
+                              <h5 class="card-title">Women's leadership forum virtual</h5>
+                              <div class="d-flex">
+                                <h6 class="card-subtitle d-flex align-items-center">
+                                  <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-map meeting-icon ms-2 me-1"></span> Prism club,
+                                  Midtown
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-2 d-flex align-items-center">
+                          <a href="#" class="btn btn-lg btn-outline-primary px-3">
+                            <span class="icon-calendar meeting-calendar"></span>
+                          </a>
+                          <a href="#" class="btn btn-lg btn-primary ms-3 px-3">Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="card list-view-card">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-3 meeting-event-time d-flex flex-row align-items-center">
+                          <span class="big-text text-red">06</span>
+                          <h6>hours left</h6>
+                        </div>
+
+                        <div class="col-md-8 col-lg-7">
+                          <div class="card-body d-flex flex-row align-items-center text-start">
+                            <div class="meeting-event-image">
+                              <img src="assets/images/event-2-square.jpg" class="img-fluid rounded-round"
+                                alt="meeting-1 image">
+                            </div>
+                            <div>
+                              <h5 class="card-title">Women's leadership forum virtual</h5>
+                              <div class="d-flex">
+                                <h6 class="card-subtitle d-flex align-items-center">
+                                  <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-map meeting-icon ms-2 me-1"></span> Prism club,
+                                  Midtown
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-2 d-flex align-items-center">
+                          <a href="#" class="btn btn-lg btn-outline-primary px-3">
+                            <span class="icon-calendar meeting-calendar"></span>
+                          </a>
+                          <a href="#" class="btn btn-lg btn-primary ms-3 px-3">Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="card list-view-card">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-3 meeting-event-time d-flex flex-row align-items-center">
+                          <span class="big-text">22</span>
+                          <div>
+                            <h6>October</h6>
+                            <p>10:00 AM - 11:30 AM</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-8 col-lg-7">
+                          <div class="card-body d-flex flex-row align-items-center text-start">
+                            <div class="meeting-event-image">
+                              <img src="assets/images/event-1-square.jpg" class="img-fluid rounded-round"
+                                alt="meeting-1 image">
+                            </div>
+                            <div>
+                              <h5 class="card-title">Women's leadership forum virtual</h5>
+                              <div class="d-flex">
+                                <h6 class="card-subtitle d-flex align-items-center">
+                                  <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-map meeting-icon ms-2 me-1"></span> Prism club,
+                                  Midtown
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-2 d-flex align-items-center">
+                          <a href="#" class="btn btn-lg btn-outline-primary px-3">
+                            <span class="icon-calendar meeting-calendar"></span>
+                          </a>
+                          <a href="#" class="btn btn-lg btn-primary ms-3 px-3">Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="card list-view-card">
+                      <div class="row">
+                        <div class="col-md-4 col-lg-3 meeting-event-time d-flex flex-row align-items-center">
+                          <span class="big-text">28</span>
+                          <div>
+                            <h6>October</h6>
+                            <p>10:00 AM - 11:30 AM</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-8 col-lg-7">
+                          <div class="card-body d-flex flex-row align-items-center text-start">
+                            <div class="meeting-event-image">
+                              <img src="assets/images/event-2-square.jpg" class="img-fluid rounded-round"
+                                alt="meeting-1 image">
+                            </div>
+                            <div>
+                              <h5 class="card-title">Women's leadership forum virtual</h5>
+                              <div class="d-flex">
+                                <h6 class="card-subtitle d-flex align-items-center">
+                                  <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-map meeting-icon ms-2 me-1"></span> Prism club,
+                                  Midtown
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-2 d-flex align-items-center">
+                          <a href="#" class="btn btn-lg btn-outline-primary px-3">
+                            <span class="icon-calendar meeting-calendar"></span>
+                          </a>
+                          <a href="#" class="btn btn-lg btn-primary ms-3 px-3">Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <a href="#" class="btn btn-lg btn-primary mt-md-3 mt-lg-5">View all meetings</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Column View -->
+              <div class="tab-pane fade" id="meeting-tabs-3" role="tabpanel" aria-labelledby="meeting-tab-3">
+                <div class="row mt-5">
+
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card column-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <img src="assets/images/slide-1.png" class="card-img-top" alt="slider 1">
+                      <div class="card-body">
+                        <div class="date-time bg-red">
+                          <span class="text-big">02</span>
+                          <p>hours left</p>
+                        </div>
+                        <h5 class="card-title mt-3">Women's leadership forum virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum..</p>
+                        <h6 class="card-subtitle d-flex align-items-center">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle d-flex align-items-center">
+                          <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                        </h6>
+                        <a href="#" class="btn btn-primary w-100 mt-auto">Tickets & details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card column-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <img src="assets/images/slide-2.png" class="card-img-top" alt="slider image 2">
+                      <div class="card-body">
+                        <div class="date-time bg-red">
+                          <span class="text-big">06</span>
+                          <p>hours left</p>
+                        </div>
+                        <h5 class="card-title mt-3">You lead jhonson city</h5>
+                        <p class="card-text">Get leadership training for your women's ministry leaders at Lifeway's You
+                          Lead event.</p>
+                        <h6 class="card-subtitle d-flex align-items-center">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle d-flex align-items-center">
+                          <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                        </h6>
+                        <a href="#" class="btn btn-primary w-100 mt-auto">Tickets & details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card column-view-card">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <img src="assets/images/slide-1.png" class="card-img-top" alt="slider image 1">
+                      <div class="card-body">
+                        <div class="date-time">
+                          <span class="text-big">22</span>
+                          <p>Sep</p>
+                        </div>
+                        <h5 class="card-title mt-3">Women's leadership forum virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum..</p>
+                        <h6 class="card-subtitle d-flex align-items-center">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle d-flex align-items-center">
+                          <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                        </h6>
+                        <a href="#" class="btn btn-primary w-100 mt-auto">Tickets & details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <a href="#" class="btn btn-lg btn-primary mt-md-3 mt-lg-5">View all meetings</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Map View -->
+              <div class="tab-pane fade" id="meeting-tabs-4" role="tabpanel" aria-labelledby="meeting-tab-4">
+                <div class="row mt-5">
+                  <div class="col-md-12">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.0517600133!2d-95.73093253682289!3d29.817364695169356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1689859055405!5m2!1sen!2sin"
+                      width="100" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="container-fluid section cta-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-9">
+            <div class="section-title light">
+              <h2>Meeting speakers</h2>
+              <h5>Join our community and share your thoughts with the one who need to stretch their limits.</h5>
+            </div>
+            <a href="#" class="btn btn-lg btn-white mt-md-3 mt-lg-4">Register now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="container-fluid section speakers-section bg-light-gray">
+      <div class="container">
+        <div class="section-title dark">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-9">
+              <h2>Upcoming events</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+
+            <div class="d-xl-flex align-items-start justify-content-lg-around">
+              <div class="filter-box order-1">
+                <label>Filter</label>
+                <div class="custom-select">
+                  <select class="form-select select-2" id="filter-type-two" data-placeholder="Ticket Type">
+                    <option>By Age Group</option>
+                    <option>By Area</option>
+                    <option>By Dates</option>
+                  </select>
+                </div>
+                <!-- <div class="custom-select hide-arrow">
+                  <select class="form-select select-2" id="meeting-for-two" data-placeholder="Ticket Type">
+                    <option>Meeting for all age group</option>
+                    <option>Meeting for womens</option>
+                    <option>Meeting for kids</option>
+                    <option>Meeting for students</option>
+                    <option>Meeting for adults</option>
+                  </select>
+                  <div class="clear-filter-ico">
+                    <svg height="11" viewBox="0 0 329.26933 329" width="11" xmlns="http://www.w3.org/2000/svg"
+                      id="fi_1828778">
+                      <path
+                        d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0">
+                      </path>
+                    </svg>
+                  </div>
+                </div> -->
+                <div class="date-range-picker filter">
+                  <input type="text" name="datetimes" />
+                </div>
+              </div>
+
+              <ul class="nav nav-tabs mb-3 mt-4 mt-xl-0 mb-lg-0 custom-tabs" id="events-tab" role="tablist">
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link active" id="events-tab-1" data-bs-toggle="tab" href="#events-tabs-1" role="tab"
+                    aria-controls="events-tabs-1" aria-selected="true">
+                    <span class="icon-slider event-tabing-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link" id="events-tab-2" data-bs-toggle="tab" href="#events-tabs-2" role="tab"
+                    aria-controls="events-tabs-2" aria-selected="false">
+                    <span class="icon-column tabing-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link" id="events-tab-3" data-bs-toggle="tab" href="#events-tabs-3" role="tab"
+                    aria-controls="events-tabs-3" aria-selected="false">
+                    <span class="icon-list tabing-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item mt-sm-0 mt-2" role="presentation">
+                  <a class="nav-link" id="events-tab-4" data-bs-toggle="tab" href="#events-tabs-4" role="tab"
+                    aria-controls="events-tabs-4" aria-selected="false">
+                    <span class="icon-location tabing-icon"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item mt-sm-0 mt-2 cursor-pointer me-0 d-md-none toggleSidebarFilter" role="presentation">
+                  <a class="nav-link active">
+                    <svg version="1.1" fill="#FFF" id="fi_57164" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22"
+                      viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;"
+                      xml:space="preserve">
+                      <g>
+                        <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+                          c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+                          c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="nav nav-tabs mb-3 mt-4 mt-xl-0 mb-lg-0 custom-tabs order-1 d-none d-md-inline-block"
+                role="tablist">
+                <li class="nav-item cursor-pointer toggleSidebarFilter mx-xl-3" role="presentation">
+                  <a class="nav-link active">
+                    <svg version="1.1" fill="#FFF" id="fi_57164" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22"
+                      viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;"
+                      xml:space="preserve">
+                      <g>
+                        <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+                          c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+                          c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="#" class="mb-3 mt-3 mt-lg-0 mb-lg-0 btn btn-lg btn-outline-dark order-1 text-nowrap">View all events</a>
+            </div>
+
+            <div class="tab-content" id="events-tab-content">
+              <!-- Slider View -->
+              <div class="tab-pane fade show active" id="events-tabs-1" role="tabpanel" aria-labelledby="events-tab-1">
+                <div class="row mt-5">
+                  <div class="col-md-12">
+
+                    <div id="event-carousel" class="carousel slide carousel-fade event-carousel"
+                      data-bs-ride="carousel">
+
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="carousel-caption text-start">
+                            <div class="mt-auto">
+                              <h2>Maiores alias conseua
+                                <br>tur aut nerferen dis eveniet
+                              </h2>
+                              <a href="#" class="btn btn-lg btn-primary mt-md-3 mt-lg-4">Tickets & details</a>
+                            </div>
+
+                            <div class="mt-auto d-flex flex-row mb-4">
+                              <div class="event-time">
+                                <span class="text-big">25</span>
+                                <p>Days left</p>
+                              </div>
+                              <div class="slider-event-detail">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-calendar meeting-icon me-3"></span> 24 October, 2023
+                                    </h6>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-speaker meeting-icon me-3"></span> Jonathan Andrew
+                                    </h6>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-map meeting-icon me-3"></span> Prism club,
+                                      Midtown
+                                    </h6>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-ticket  meeting-icon me-3"></span> Starting from $49
+                                    </h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <img src="assets/images/slide-1.png" class="img-fluid" alt="slide-1 image">
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="carousel-caption text-start">
+                            <div class="mt-auto">
+                              <h2>Lorem ipsum dolor sit amet,
+                                <br>consectetur adipiscing elit
+                              </h2>
+                              <a href="#" class="btn btn-lg btn-secondary mt-md-3 mt-lg-4">Tickets & details</a>
+                            </div>
+
+                            <div class="mt-auto d-flex flex-row mb-4">
+                              <div class="event-time">
+                                <span class="text-big">25</span>
+                                <p>Days left</p>
+                              </div>
+                              <div class="slider-event-detail">
+                                <div class="row">
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-calendar meeting-icon me-3"></span> 12 November, 2023
+                                    </h6>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-speaker meeting-icon me-3"></span> Jonathan Andrew
+                                    </h6>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-map meeting-icon me-3"></span> Prism club,
+                                      Midtown
+                                    </h6>
+                                  </div>
+                                  <div class="col-6">
+                                    <h6 class="card-subtitle d-flex align-items-center">
+                                      <span class="icon-ticket  meeting-icon me-3"></span> Starting from $59
+                                    </h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <img src="assets/images/slide-2.png" class="img-fluid" alt="slide-2 image">
+                        </div>
+                      </div>
+
+                      <button class="carousel-control-prev" type="button" data-bs-target="#event-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#event-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Column View -->
+              <div class="tab-pane fade" id="events-tabs-2" role="tabpanel" aria-labelledby="events-tab-2">
+                <div class="row mt-5">
+
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card column-view-card">
+                      <img src="assets/images/slide-1.png" class="card-img-top" alt="slider image 1">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <div class="date-time bg-red">
+                          <span class="text-big">02</span>
+                          <p>hours left</p>
+                        </div>
+                        <h5 class="card-title mt-3">Women's leadership forum virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum..</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-ticket meeting-icon me-2"></span> Starting from $40
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-seat meeting-icon me-2"></span> 480/1500 Available seats
+                        </h6>
+                        <a href="#" class="btn btn-primary w-100 mt-auto">Tickets & details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card column-view-card">
+                      <img src="assets/images/slide-2.png" class="card-img-top" alt="slider image 1">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <div class="date-time bg-red">
+                          <span class="text-big">06</span>
+                          <p>hours left</p>
+                        </div>
+                        <h5 class="card-title mt-3">You lead jhonson city</h5>
+                        <p class="card-text">Get leadership training for your women's ministry leaders at Lifeway's You
+                          Lead event.</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-ticket meeting-icon me-2"></span> Starting from $40
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-seat meeting-icon me-2"></span> 480/1500 Available seats
+                        </h6>
+                        <a href="#" class="btn btn-primary w-100 mt-auto">Tickets & details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card column-view-card">
+                      <img src="assets/images/slide-1.png" class="card-img-top" alt="slider image 1">
+                      <div class="favourite-event">
+                        <span class="icon-heart-fill d-none"></span>
+                        <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div class="card-body">
+                        <div class="date-time">
+                          <span class="text-big">22</span>
+                          <p>Sep</p>
+                        </div>
+                        <h5 class="card-title mt-3">Women's leadership forum virtual</h5>
+                        <p class="card-text">We invite you to gather together online with other women in leadership for
+                          the Women's Forum..</p>
+                        <h6 class="card-subtitle">
+                          <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club, Midtown
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-ticket meeting-icon me-2"></span> Starting from $40
+                        </h6>
+                        <h6 class="card-subtitle">
+                          <span class="icon-seat meeting-icon me-2"></span> 480/1500 Available seats
+                        </h6>
+                        <a href="#" class="btn btn-primary w-100 mt-auto">Tickets & details</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- List View -->
+              <div class="tab-pane fade" id="events-tabs-3" role="tabpanel" aria-labelledby="events-tab-3">
+                <div class="row mt-5">
+                  <!-- Event 1 -->
+                  <div class="col-md-12 mb-3">
+                    <div class="card event-list-view-card">
+                      <div class="row">
+
+                        <div class="meeting-event-image">
+                          <img src="assets/images/event-1-square.jpg" class="img-fluid rounded-round"
+                            alt="meeting-2 image">
+                          <div class="favourite-event">
+                            <span class="icon-heart-fill d-none"></span>
+                            <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-body text-start h-100">
+                            <div class="row h-100">
+                              <div class="col-lg-12">
+                                <h5 class="card-title">Maiores alias conseua tur aut nerferen dis eveniet</h5>
+                                <p class="card-text">Officia deserunt mollitia animi res est laborum et dolorum
+                                  fugaharum quide rerum facilis
+                                  expedia distinctio.Officia deserunt mollitia animi.</p>
+                              </div>
+
+                              <div class="col-xl-4 col-md-6">
+                                <h6 class="card-subtitle">
+                                  <span class="icon-calendar meeting-icon me-2"></span> 10 - 13 October
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-ticket meeting-icon me-2"></span> Starting from $40
+                                </h6>
+                              </div>
+
+                              <div class="col-xl-4 col-md-6">
+                                <h6 class="card-subtitle">
+                                  <span class="icon-seat meeting-icon me-2"></span> 480/1500 Available seats
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club,
+                                  Midtown
+                                </h6>
+                              </div>
+
+                              <div class="col-xl-4 d-flex align-items-end justify-content-lg-end">
+                                <a href="#" class="btn btn-lg btn-primary mt-3 px-3">Tickets & details</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Event 2 -->
+                  <div class="col-md-12 mb-3">
+                    <div class="card event-list-view-card">
+                      <div class="row">
+
+                        <div class="meeting-event-image">
+                          <img src="assets/images/event-2-square.jpg" class="img-fluid rounded-round"
+                            alt="Event-2 image">
+                          <div class="favourite-event">
+                            <span class="icon-heart-fill d-none"></span>
+                            <span class="icon-heart-blank"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-body text-start h-100">
+                            <div class="row h-100">
+                              <div class="col-lg-12">
+                                <h5 class="card-title">Maiores alias conseua tur aut nerferen dis eveniet</h5>
+                                <p class="card-text">Officia deserunt mollitia animi res est laborum et dolorum
+                                  fugaharum quide rerum facilis
+                                  expedia distinctio.Officia deserunt mollitia animi.</p>
+                              </div>
+
+                              <div class="col-xl-4 col-md-6">
+                                <h6 class="card-subtitle">
+                                  <span class="icon-calendar meeting-icon me-2"></span> 10 - 13 October
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-speaker meeting-icon me-2"></span> Sondra Samuels
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-ticket meeting-icon me-2"></span> Starting from $40
+                                </h6>
+                              </div>
+
+                              <div class="col-xl-4 col-md-6">
+                                <h6 class="card-subtitle">
+                                  <span class="icon-seat meeting-icon me-2"></span> 480/1500 Available seats
+                                </h6>
+                                <h6 class="card-subtitle">
+                                  <span class="icon-map meeting-icon ms-1 me-2"></span> Prism club,
+                                  Midtown
+                                </h6>
+                              </div>
+
+                              <div class="col-xl-4 d-flex align-items-end justify-content-lg-end">
+                                <a href="#" class="btn btn-lg btn-primary mt-3 px-3">Tickets & details</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Map View -->
+              <div class="tab-pane fade" id="events-tabs-4" role="tabpanel" aria-labelledby="events-tab-4">
+                <div class="row mt-5">
+                  <div class="col-md-12">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.0517600133!2d-95.73093253682289!3d29.817364695169356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1689859055405!5m2!1sen!2sin"
+                      width="100" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="sidebar-filter">
+    <div class="top-section text-end p-3">
+      <svg class="cursor-pointer close-sidebar" id="fi_2976286" enable-background="new 0 0 320.591 320.591" height="16"
+        viewBox="0 0 320.591 320.591" width="16" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <g id="close_1_">
+            <path
+              d="m30.391 318.583c-7.86.457-15.59-2.156-21.56-7.288-11.774-11.844-11.774-30.973 0-42.817l257.812-257.813c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875l-259.331 259.331c-5.893 5.058-13.499 7.666-21.256 7.288z">
+            </path>
+            <path
+              d="m287.9 318.583c-7.966-.034-15.601-3.196-21.257-8.806l-257.813-257.814c-10.908-12.738-9.425-31.908 3.313-42.817 11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414-6.35 5.522-14.707 8.161-23.078 7.288z">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="filter-main px-3">
+      <p>Sort By:</p>
+      <form class="onboarding-form">
+        <ul class="filter-type ps-0">
+          <li class="mb-2">General</li>
+          <ul class="ps-0">
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Starting soon
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Popular Church
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Famous Speakers
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  Most Visited
+                </label>
+              </div>
+            </li>
+          </ul>
+
+          <li class="mb-2 mt-3">Size</li>
+          <ul class="ps-0">
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortBySize1">
+                <label class="form-check-label" for="sortBySize1">
+                  High To Low
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortBySize2">
+                <label class="form-check-label" for="sortBySize2">
+                  Low To High
+                </label>
+              </div>
+            </li>
+          </ul>
+
+          <li class="mb-2 mt-3">Price</li>
+          <ul class="ps-0">
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortByPrice1">
+                <label class="form-check-label" for="sortByPrice1">
+                  High To Low
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortByPrice2">
+                <label class="form-check-label" for="sortByPrice2">
+                  Low To High
+                </label>
+              </div>
+            </li>
+          </ul>
+
+          <li class="mb-2 mt-3">Occupancy</li>
+          <ul class="ps-0">
+            <li>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="SeatsByOccupancy">
+                <label class="form-check-label" for="SeatsByOccupancy">
+                  Seats by occupancy
+                </label>
+              </div>
+            </li>
+          </ul>
+        </ul>
+        <div>
+          <button type="button" name="" id="" class="btn btn-lg btn-primary px-3 py-2 mb-3">Apply</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-black py-5">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6">
+          <img src="assets/images/Logo-light.svg" class="img-fluid" alt="Dittmøte Logo">
+        </div>
+        <div class="col-md-6">
+          <ul class="list-unstyled d-flex justify-content-sm-end mt-sm-0 mt-3">
+            <li class="ms-sm-4">
+              <a href="#">
+                <span class="icon-facebook footer-social-icon"></span>
+              </a>
+            </li>
+            <li class="ms-4">
+              <a href="#">
+                <span class="icon-instagram footer-social-icon"></span>
+              </a>
+            </li>
+            <li class="ms-4">
+              <a href="#">
+                <span class="icon-twitter footer-social-icon"></span>
+              </a>
+            </li>
+            <li class="ms-4">
+              <a href="#">
+                <span class="icon-youtube footer-social-icon"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row links-contact d-flex align-items-center">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="about-us.html">About us</a>
+                </li>
+                <li>
+                  <a href="events.html">Events</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="privacy-policy.html">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="terms-and-condition.html">Terms and conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-3 mt-lg-0 text-lg-end">
+          <h5>
+            Stay up to date with
+            <span class="text-blue">Ditt</span>møte
+          </h5>
+
+          <div class="contact-container">
+            <input type="text" placeholder="Enter your email">
+            <button type="submit">
+              <span class="icon-arrow-right footer-social-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row copyright">
+        <div class="col-md-6">
+          <p class="mb-0 text-white text-start small h-100 d-flex align-items-center">&copy; 2023 Dittmøte.
+            All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="dropdown d-flex align-items-center justify-content-end">
+            <button class="btn dropdown-toggle language text-white small" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/uk.svg" class="me-1" alt="language"> English
+            </button>
+            <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><img src="assets/images/uk.svg" alt="united kingdom flag"
+                    class="me-1"> English</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="assets/images/norway.svg" alt="norway flag" class="me-1">
+                  Norwegian</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom-select.js"></script>
+
+  <!--========== Select2 Script ==========-->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+  <!--========== Select2 Script ==========-->
+  
+  <!--========== Daterange Picker ==========-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script>
+    $(function() {
+      $('input[name="datetimes"]').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'M/DD hh:mm A'
+        }
+      });
+    });
+  </script>
+  <!--========== Daterange Picker ==========-->
+
+</body>
+
+</html>
+
+
+<script>
+  function relocate_login() {
+    location.href = "login.html";
+  }
+
+  $(".favourite-event, .favourite-speaker").click(function () {
+    $(".icon-heart-fill").toggleClass("d-none");
+    $(".icon-heart-blank").toggleClass("d-none");
+  });
+</script>
+
+
+<!--========== select2 initialization ==========-->
+<script>
+  $('#filter-type-one, #meeting-for-one').select2({
+    minimumResultsForSearch: -1
+  });
+  $('#filter-type-two, #meeting-for-two').select2({
+    minimumResultsForSearch: -1
+  });
+</script>
+<!--========== select2 initialization ==========-->
+
+
+<!--========== Toggle sidebar filter ==========-->
+<script>
+  $(".toggleSidebarFilter").click(function () {
+    $(".sidebar-filter").addClass("active")
+  });
+  $(".close-sidebar").click(function () {
+    $(".sidebar-filter").removeClass("active")
+  });
+</script>
+<!--========== Toggle sidebar filter ==========-->
+
+<!-- speaker slider -->
+<script>
+  $('#speakerCarousel .carousel-item').each(function () {
+    var minPerSlide = 4;
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    for (var i = 0; i < minPerSlide; i++) {
+      next = next.next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+
+      next.children(':first-child').clone().appendTo($(this));
+    }
+  });
+
+</script>
+<!-- speaker slider -->
+
+
+<!-- header searchbar -->
+
+<script>
+  if ($(window).width() > 991) {
+    $(".nav-item.search").click(function(){
+      $(".search-filter-section.header").removeClass("d-none")
+    });
+    $(".close-header-search").click(function(){
+      $(".search-filter-section.header").addClass("d-none")
+    });
+  }
+</script>
+<!-- header searchbar -->

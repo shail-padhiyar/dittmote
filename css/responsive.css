@@ -1,0 +1,346 @@
+@media (min-width: 1441px) {
+    .right-section img {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-container input {
+        width: 300px;
+    }
+
+    .event-slider .event-details {
+        width: 90%
+    }
+
+    .event-detail-section .left-section {
+        width: 90%;
+    }
+
+    .about-us-body .content-section {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .event-detail-section .left-section {
+        width: 100%;
+    }
+
+    .about-us-body .content-section {
+        width: 100%;
+    }
+    .church-detail-body .hero-section img {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    body.searchbar-padding{
+        padding-top: 130px;
+    }
+    .section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .dittmote-navigation.navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .hero-carousel.carousel .carousel-item .carousel-caption h2,
+    .event-carousel.carousel .carousel-item .carousel-caption h2 {
+        font-size: 2rem;
+    }
+
+    .carousel-indicators {
+        bottom: 0.5rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        bottom: 3rem;
+    }
+
+    .filter-box {
+        margin: 2rem auto 0;
+    }
+
+    .card.event-list-view-card .meeting-event-image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .event-slider .event-details {
+        padding: 1rem;
+    }
+
+    .event-detail-section {
+        text-align: center
+    }
+    .card.event-list-view-card .meeting-event-image .favourite-event {
+        right: 15px;
+        top: 0;
+    }
+    .support-ticket-list-section .header-filters .search{
+        width: 100%;
+    }
+    .dittmote-navigation.navbar-expand-lg .navbar-nav .dropdown-menu{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .btn {
+        padding: 0.5rem 1rem
+    }
+
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .custom-select {
+        min-width: auto !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .event-time,
+    .slider-event-detail {
+        display: none;
+    }
+
+    .event-slider .event-details {
+        bottom: -100px;
+    }
+
+    .events-body .speakers-section {
+        margin-top: 120px;
+    }
+
+    .registration-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .registration-section .registration-ticket::before, .registration-section .registration-ticket::after {
+        content: "";
+        height: 50px;
+        width: 50px;
+        top: calc(50% - 25px);
+    }
+
+    .registration-section .registration-ticket::before {
+        left: -25px;
+    }
+
+    .registration-section .registration-ticket::after {
+        right: -25px;
+    }
+
+    .registration-section .left-section {
+        height: 250px;
+        padding: 0.5rem 2rem;
+    }
+
+    .registration-section .right-section {
+        height: 250px;
+        padding: 0.5rem 2rem 0.5rem 0rem;
+    }
+
+    .registration-section .right-section .ticket-price span {
+        font-size: 20px;
+    }
+
+    .registration-section .right-section .ticket-price p {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .registration-section .right-section .total-members span {
+        font-size: 18px;
+    }
+
+    .registration-section .right-section .total-members input {
+        margin-top: 5px;
+    }
+
+    .contact-us-body .social-link-section .decoration-line:before,
+    .contact-us-body .social-link-section .decoration-line:after {
+        transform: rotate(90deg);
+    }
+
+    .contact-us-body .social-link-section .decoration-line:before {
+        left: 50%;
+        bottom: 60%;
+    }
+
+    .contact-us-body .social-link-section .decoration-line:after {
+        right: 50%;
+        top: 60%;
+    }
+
+    .profile-sidebar{
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-carousel.carousel .carousel-item .carousel-caption h2,
+    .event-carousel.carousel .carousel-item .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    .filter-box {
+        display: none;
+    }
+
+    .registration-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .registration-section .left-section .date-time span {
+        font-size: 16px;
+    }
+
+    .registration-section .left-section {
+        height: 250px;
+        padding: 0.5rem 2rem;
+    }
+
+    .registration-section .right-section {
+        height: 250px;
+        padding: 0.5rem 1rem 0.5rem 0rem;
+    }
+
+    .event-slider .event-details {
+        bottom: -160px;
+    }
+
+    .events-body .speakers-section {
+        margin-top: 230px;
+    }
+
+    /* add event page tabing wizard */
+    .add-event-body .wizard .nav-tabs .nav-item .nav-link,
+    .wizard .nav-tabs .nav-item .nav-link.step-done::after{
+        height: 40px;
+        width: 40px;
+        font-size: 1rem;
+    }
+
+    .speaker-detail-section .speaker-img img {
+        width: 100px;
+    }
+
+    .sidebar-filter{
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .registration-section h3 {
+        font-size: 1rem;
+    }
+
+    .registration-section .left-section .date-time span {
+        font-size: 0.7rem;
+    }
+
+    .registration-section .left-section .date-time span {
+        font-size: 0.7rem;
+    }
+
+    .registration-section .left-section img {
+        height: 20px;
+    }
+
+    .registration-section .left-section h6 {
+        font-size: 0.8rem;
+    }
+
+    .registration-section .registration-ticket::before, .registration-section .registration-ticket::after {
+        content: "";
+        height: 40px;
+        width: 40px;
+        top: calc(50% - 20px);
+    }
+
+    .registration-section .registration-ticket::before {
+        left: -20px;
+    }
+
+    .registration-section .registration-ticket::after {
+        right: -20px;
+    }
+
+    .registration-section .right-section .ticket-price span {
+        font-size: 16px;
+    }
+
+    .registration-section .right-section .ticket-price p {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .registration-section .right-section .total-members span {
+        font-size: 16px;
+    }
+
+    .registration-section .right-section .btn {
+        font-size: 0.8rem;
+    }
+
+    .registration-section .left-section {
+        height: 200px;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .registration-section .right-section {
+        height: 200px;
+        padding: 0.5rem 1rem 0.5rem 0rem;
+    }
+
+    .ticket-subject h5{
+        font-size: 1.1rem;
+    } 
+    .ticket-conversation .user-detail span {
+        font-size: 1rem;
+    }
+
+    .booking-history-list td:first-child, 
+    .support-ticket-list-section td a {
+        white-space: nowrap;
+        width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    .contact-container{
+        display: flex;
+    }
+    .contact-container input {
+        width: 100%;
+    }
+    .card.event-list-view-card .meeting-event-image .favourite-event {
+        right: 0px;
+        top: 0px;
+    }
+    
+}
